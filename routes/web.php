@@ -78,7 +78,7 @@ Route::get('/cek-ongkir', fn() => view('v_ongkir.ongkir'));
 // API RajaOngkir (testing)
 Route::get('/list-ongkir', function () {
     $response = Http::withHeaders([
-        'key' => 'e86e8d1bab75ac940a77cc3a45d84b4f'
+        'key' => 'isi API KEY anda di sini'
     ])->get('https://api.rajaongkir.com/starter/province');
     dd($response->json());
 });
